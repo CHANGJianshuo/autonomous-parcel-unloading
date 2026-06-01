@@ -1,5 +1,10 @@
 # Autonomous Parcel Unloading from Truck Containers
 
+| Repository | Description |
+|---|---|
+| [**truck-unload-robot**](https://github.com/CHANGJianshuo/truck-unload-robot) | Robot system: URDF, control, path planning, demo |
+| [**parcel_detection**](https://github.com/CHANGJianshuo/parcel_detection) | Mask R-CNN training: dataset, transfer learning, inference |
+
 CNN detects stacked parcels, mecanum base navigates, 7-DOF arm picks and places onto pallet — fully autonomous in Gazebo simulation.
 
 ## Demo
@@ -41,13 +46,6 @@ Dijkstra Navigate to Pallet  -->  Arm swings backward  -->  Release
 | **Base** | Mecanum omnidirectional, PID on world coordinates, Dijkstra path planning |
 | **Suction** | Gazebo DetachableJoint, spawn at fer_link7 (zero-offset attach) |
 | **Stack** | ROS 2 Humble, Gazebo Harmonic, CycloneDDS, ros_gz_bridge |
-
-## Repositories
-
-| Repository | Description |
-|---|---|
-| [**truck-unload-robot**](https://github.com/CHANGJianshuo/truck-unload-robot) | Robot system: URDF, control, path planning, demo orchestration |
-| [**parcel_detection**](https://github.com/CHANGJianshuo/parcel_detection) | Mask R-CNN training: dataset, two-stage transfer learning, inference |
 
 ## License
 
